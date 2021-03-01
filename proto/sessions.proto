@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package sessions;
+
+service Sessions {
+    rpc create_session (CreateSessionRequest) returns (CreateSessionReply) {}
+}
+
+message CreateSessionRequest {
+    int64 user_id = 1;
+    int32 access_role = 2;
+    string client_ip = 3;
+}
+
+message CreateSessionReply {
+    string message = 1;
+}

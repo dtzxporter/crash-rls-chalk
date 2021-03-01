@@ -1,0 +1,12 @@
+[package]
+authors = ["dtzxporter"]
+edition = "2018"
+name = "crash-rls-chalk"
+version = "0.1.0"
+
+[dependencies]
+prost = "0.7"
+tonic = "0.4.0"
+
+[build-dependencies]
+tonic-build = {version = "0.4.0", features = ["prost"]}
